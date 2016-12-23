@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySummerCarMoney.Properties
+namespace MySummerCarMoneyTrainer.Properties
 {
 
 

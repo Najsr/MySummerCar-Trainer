@@ -3,7 +3,7 @@ using System.Text;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace MySummerCarMoney
+namespace MySummerCarMoneyTrainer
 {
     public class Memory
     {
@@ -11,9 +11,9 @@ namespace MySummerCarMoney
         /////DLL Imports/////
         /////////////////////
         [DllImport("kernel32.dll")]
-        private static extern Int32 WriteProcessMemory(IntPtr Handle, int Address, byte[] buffer, int Size, int BytesWritten = 0);
+        private static extern int WriteProcessMemory(IntPtr Handle, int Address, byte[] buffer, int Size, int BytesWritten = 0);
         [DllImport("kernel32.dll")]
-        private static extern Int32 ReadProcessMemory(IntPtr Handle, int Address, byte[] buffer, int Size, int BytesRead = 0);
+        private static extern int ReadProcessMemory(IntPtr Handle, int Address, byte[] buffer, int Size, int BytesRead = 0);
 
 
         /////////////////////

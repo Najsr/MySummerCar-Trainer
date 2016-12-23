@@ -45,6 +45,7 @@ namespace MySummerCarMoneyTrainer
                 if (float.TryParse(textBox1.Text.Replace('.', ','), out money)) {
                     Memory.WriteFloat(money_address, money);
                     label1.Text = "Money: " + Memory.ReadFloat(money_address).ToString();
+                    textBox1.Clear();
                 } else {
                     MessageBox.Show("Money couldn't be written!", "Error", MessageBoxButtons.OK);
                 }

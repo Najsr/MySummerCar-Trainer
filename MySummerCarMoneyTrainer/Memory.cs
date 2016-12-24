@@ -92,7 +92,7 @@ namespace MySummerCarMoneyTrainer
             WriteProcessMemory(GetProcessHandle(), Address, Bytes, Bytes.Length);
         }
 
-        public static void WriteFloat(int Address, float Value) //Write a Fload
+        public static void WriteFloat(int Address, float Value) //Write a Float
         {
             WriteProcessMemory(GetProcessHandle(), Address, BitConverter.GetBytes(Value), 4);
         }
